@@ -1,38 +1,123 @@
-.App {
+body {
+  font-family: "Poppins", sans-serif;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: hsl(260, 8%, 14%);
+}
+p {
+  color: hsl(257, 7%, 63%);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Nav menu */
+.nav-menu-list {
+  background-color: hsl(257, 27%, 26%);
+}
+.sign-up-btn {
+  background-color: hsl(180, 66%, 49%);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Hero */
+.hero-bg {
+  background-image: url("./images/illustration-working.svg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 18rem;
+  min-height: 13rem;
+}
+
+/* Body */
+.body-container {
+  background-color: hsl(240, 36%, 96%);
+  min-height: 30rem;
+}
+.form-input-wrapper {
+  background-color: hsl(257, 27%, 26%);
+  width: calc(100% - 2rem);
+}
+
+/* More info section */
+.card {
+  width: calc(100% - 2rem);
+  margin: 0 auto;
+  max-width: 320px;
+}
+.more-info-header,
+.more-info-card {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+}
+.more-info-card {
+  background-color: #fff;
+  position: relative;
+  padding-top: 4rem;
+  border-radius: 7px;
+  z-index: 10;
+}
+.card-image-container {
+  position: absolute;
+  top: -2.5rem;
+  height: 80px;
+  width: 80px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  border-radius: 50%;
+  background-color: hsl(257, 27%, 26%);
+}
+/* in between cards accent line */
+.more-info-card:not(:last-child):after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 6px;
+  height: 4rem;
+  left: 0;
+  right: 0;
+  bottom: -4rem;
+  margin: 0 auto;
+  background-color: hsl(180, 66%, 49%);
+  background-color: cyan;
 }
 
-.App-link {
-  color: #61dafb;
+/* Footer */
+.footer-top {
+  background-color: hsl(257, 27%, 26%);
+  background-image: url(./images/bg-boost-mobile.svg);
+  background-position: center;
+  background-size: cover;
+}
+.footer-bottom {
+  background-color: hsl(260, 8%, 14%);
+}
+.footer-logo path {
+  fill: white;
+}
+.social-links li:hover path {
+  fill: hsl(180, 66%, 59%);
+}
+.footer-links-section a:hover {
+  color: hsl(180, 66%, 59%);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Hover */
+@media (hover) {
+  .nav-menu-list a:hover {
+    background-color: hsl(257, 27%, 40%);
   }
-  to {
-    transform: rotate(360deg);
+  a.sign-up-btn:hover {
+    background-color: hsl(180, 66%, 59%);
+  }
+  .sign-up-btn:hover {
+    background-color: hsl(180, 66%, 59%);
   }
 }
