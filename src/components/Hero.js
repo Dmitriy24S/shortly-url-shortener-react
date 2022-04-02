@@ -4,7 +4,7 @@ export const Hero = () => {
   return (
     <section className="mb-28">
       <div className="hero-bg"></div>
-      <div className="text-wrapper flex flex-col gap-4 max-w-xs mx-auto">
+      <div className="text-wrapper flex flex-col gap-4 max-w-xs mt-4 mx-auto">
         <h1 className="text-5xl font-bold tracking-tighter">More than just shorter links</h1>
         <p>
           Build your brand’s recognition and get detailed insights on how your links are performing.

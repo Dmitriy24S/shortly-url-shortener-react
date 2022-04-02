@@ -9,7 +9,7 @@ export const Header = () => {
   return (
     <header>
       <nav className="flex justify-between items-center p-4">
-        <img src={logo} alt="logo" />
+        <img src={logo} alt="logo" className="cursor-pointer" />
         <button
           className="nav-menu-toggle"
           onClick={() => {
