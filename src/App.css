@@ -20,8 +20,14 @@ p {
 .sign-up-btn {
   background-color: hsl(180, 66%, 49%);
 }
+@media (min-width: 768px) {
+  .nav-menu-list {
+    background-color: transparent;
+    color: hsl(257, 7%, 63%);
+  }
+}
 
-/* Hero */
+/* Hero bg img*/
 .hero-bg {
   background-image: url("./images/illustration-working.svg");
   background-position: center top;
@@ -29,15 +35,34 @@ p {
   background-size: 18rem;
   min-height: 13rem;
 }
+@media (min-width: 768px) {
+  .hero-bg {
+    background-size: 30rem;
+    min-height: 23rem;
+    min-width: 20rem;
+    max-width: 31rem;
+    width: 37rem;
+  }
+}
 
 /* Body */
 .body-container {
   background-color: hsl(240, 36%, 96%);
   min-height: 30rem;
 }
+
+/* URL Input */
 .form-input-wrapper {
   background-color: hsl(257, 27%, 26%);
   width: calc(100% - 2rem);
+  background-image: url(./images/bg-shorten-mobile.svg);
+  background-position: center;
+  background-size: cover;
+}
+@media (min-width: 768px) {
+  .form-input-wrapper {
+    background-image: url(./images/bg-shorten-desktop.svg);
+  }
 }
 
 /* Link list */
@@ -53,17 +78,30 @@ p {
 .copy-btn {
   width: 90%;
 }
+@media (min-width: 768px) {
+  .copy-btn {
+    min-width: 7rem;
+    width: auto;
+  }
+}
 .active-copy {
   background-color: hsl(257, 27%, 26%);
   color: white;
 }
 
-/* More info section */
+/* Card */
 .card {
   width: calc(100% - 2rem);
   margin: 0 auto;
   max-width: 320px;
 }
+@media (min-width: 768px) {
+  .card {
+    max-width: 678px;
+  }
+}
+
+/* More info cards section */
 .more-info-header,
 .more-info-card {
   display: flex;
@@ -78,9 +116,19 @@ p {
   border-radius: 7px;
   z-index: 10;
 }
+@media (min-width: 768px) {
+  .more-info-card {
+    max-width: 22rem;
+    margin: 0;
+    text-align: left;
+  }
+}
+
 .intro-card {
   padding: 0rem 1rem;
 }
+
+/* top card img */
 .card-image-container {
   position: absolute;
   top: -2.5rem;
@@ -94,6 +142,12 @@ p {
   align-items: center;
   border-radius: 50%;
   background-color: hsl(257, 27%, 26%);
+}
+@media (min-width: 768px) {
+  .card-image-container {
+    left: 2rem;
+    right: auto;
+  }
 }
 /* in between cards accent line */
 .more-info-card:not(:last-child):after {
@@ -109,6 +163,27 @@ p {
   background-color: hsl(180, 66%, 49%);
   background-color: cyan;
 }
+@media (min-width: 768px) {
+  .more-info-card:not(:last-child):after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    background-color: hsl(180, 66%, 49%);
+    width: 6px;
+    height: 8rem;
+    right: -4.2rem;
+    bottom: 3rem;
+    left: auto;
+    margin: 0;
+    transform: rotate(90deg);
+  }
+  .more-info-card:nth-child(2) {
+    top: 2rem;
+  }
+  .more-info-card:last-child {
+    top: 4rem;
+  }
+}
 
 /* Footer */
 .footer-top {
@@ -117,21 +192,21 @@ p {
   background-position: center;
   background-size: cover;
 }
+@media (min-width: 768px) {
+  .footer-top {
+    background-image: url(./images/bg-boost-desktop.svg);
+  }
+}
 .footer-bottom {
   background-color: hsl(260, 8%, 14%);
 }
 .footer-logo path {
   fill: white;
 }
-.social-links li:hover path {
-  fill: hsl(180, 66%, 59%);
-}
-.footer-links-section a:hover {
-  color: hsl(180, 66%, 59%);
-}
 
 /* Hover */
 @media (hover) {
+  /* btns hover */
   .nav-menu-list a:hover {
     background-color: hsl(257, 27%, 40%);
   }
@@ -144,5 +219,23 @@ p {
   .active-copy:hover {
     background-color: hsl(257, 27%, 26%);
     color: white;
+  }
+  /* footer hover */
+  .social-links li:hover path {
+    fill: hsl(180, 66%, 59%);
+  }
+  .footer-links-section a:hover {
+    color: hsl(180, 66%, 59%);
+  }
+  /* desktop hover */
+  @media (min-width: 768px) {
+    .nav-menu-list a:hover {
+      background-color: transparent;
+      color: hsl(255, 11%, 22%);
+    }
+    a.sign-up-btn:hover {
+      color: white;
+      background-color: hsl(180, 66%, 59%);
+    }
   }
 }

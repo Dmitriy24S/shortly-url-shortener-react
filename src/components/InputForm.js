@@ -43,19 +43,22 @@ export const InputForm = () => {
 
   return (
     <>
-      <div className="form-input-wrapper card p-6 rounded-lg max-w-xs mx-auto relative">
-        <form className="flex flex-col gap-6" onSubmit={(e) => handleSubmit(e)}>
+      <div className="form-input-wrapper card p-6 rounded-lg max-w-xs mx-auto relative md:p-8">
+        <form
+          className="flex flex-col gap-6 md:flex-row md:items-center"
+          onSubmit={(e) => handleSubmit(e)}
+        >
           <input
             type="text"
             name="form-input-url"
             id="form-input-url"
             placeholder="Shorten a link here..."
-            className="rounded-md py-2 px-3"
+            className="rounded-md py-2 px-3 md:w-10/12"
             onChange={(e) => setInputValue(e.target.value)}
           />
           <button
             type="submit"
-            className="sign-up-btn block w-full py-2 px-8 rounded-md font-semibold text-lg tracking-wide text-white mx-auto"
+            className="sign-up-btn block w-full py-2 px-8 rounded-md font-semibold text-lg tracking-wide text-white mx-auto md:m-0 md:w-3/12 md:px-0"
           >
             Shorten It!
           </button>

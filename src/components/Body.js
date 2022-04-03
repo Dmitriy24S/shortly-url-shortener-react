@@ -6,52 +6,54 @@ import { InputForm } from "./InputForm";
 
 export const Body = () => {
   return (
-    <section className="body-container">
-      <div className="body-info relative -top-16 flex flex-col gap-14">
+    <section className="body-container md:pb-28">
+      <div className="body-info relative -top-16 flex flex-col gap-14 md:-top-12">
         <InputForm />
 
         <section className="more-info-section flex flex-col gap-24">
           <div className="more-info-header card intro-card">
-            <h2 className="text-2xl font-extrabold">Advanced Statistics</h2>
+            <h2 className="text-2xl font-extrabold md:mt-6">Advanced Statistics</h2>
             <p>
               Track how your links are performing across the web with our advanced statistics
               dashboard.
             </p>
           </div>
 
-          <div className="more-info-card card">
-            <div className="card-image-container">
-              <img src={recognitionIcon} alt="illustration" />
+          <section className="more-info-cards-container flex flex-col gap-24 md:flex-row md:px-4 md:mx-auto md:gap-4 xl:gap-24 xl:px-12 ">
+            <div className="more-info-card card">
+              <div className="card-image-container">
+                <img src={recognitionIcon} alt="illustration" />
+              </div>
+
+              <h3 className="text-xl font-extrabold">Brand Recognition</h3>
+              <p>
+                Boost your brand recognition with each click. Generic links don’t mean a thing.
+                Branded links help instil confidence in your content.
+              </p>
             </div>
 
-            <h3 className="text-xl font-extrabold">Brand Recognition</h3>
-            <p>
-              Boost your brand recognition with each click. Generic links don’t mean a thing.
-              Branded links help instil confidence in your content.
-            </p>
-          </div>
-
-          <div className="more-info-card card">
-            <div className="card-image-container">
-              <img src={recordsIcon} alt="illustration" />
+            <div className="more-info-card card">
+              <div className="card-image-container">
+                <img src={recordsIcon} alt="illustration" />
+              </div>
+              <h3 className="text-xl font-extrabold">Detailed Records</h3>
+              <p>
+                Gain insights into who is clicking your links. Knowing when and where people engage
+                with your content helps inform better decisions.
+              </p>
             </div>
-            <h3 className="text-xl font-extrabold">Detailed Records</h3>
-            <p>
-              Gain insights into who is clicking your links. Knowing when and where people engage
-              with your content helps inform better decisions.
-            </p>
-          </div>
 
-          <div className="more-info-card card">
-            <div className="card-image-container">
-              <img src={customizableIcon} alt="illustration" />
+            <div className="more-info-card card">
+              <div className="card-image-container">
+                <img src={customizableIcon} alt="illustration" />
+              </div>
+              <h3 className="text-xl font-extrabold">Fully Customizable</h3>
+              <p>
+                Improve brand awareness and content discoverability through customizable links,
+                supercharging audience engagement.
+              </p>
             </div>
-            <h3 className="text-xl font-extrabold">Fully Customizable</h3>
-            <p>
-              Improve brand awareness and content discoverability through customizable links,
-              supercharging audience engagement.
-            </p>
-          </div>
+          </section>
         </section>
       </div>
     </section>
