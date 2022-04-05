@@ -20,7 +20,7 @@ export const NavMenu = () => {
           </a>
         </li>
       </ul>
-      <ul className="flex flex-col gap-6 pt-6 md:flex-row md:pt-0 items-center">
+      <ul className="flex flex-col gap-6 pt-6 md:flex-row md:pt-0 md:items-center">
         <li>
           <a href="#/" className="w-full block py-3 rounded-full ">
             Login
