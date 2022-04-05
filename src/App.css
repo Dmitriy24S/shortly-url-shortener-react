@@ -88,6 +88,29 @@ p {
   background-color: hsl(257, 27%, 26%);
   color: white;
 }
+.delete-link-btn path {
+  stroke: crimson;
+}
+
+/* Input error */
+.error-msg {
+  display: none;
+  text-align: left;
+  color: rgb(207, 39, 9);
+}
+.input-error input {
+  border: 2px solid rgb(224, 49, 18);
+}
+.input-error .error-msg {
+  display: block;
+  visibility: visible;
+}
+@media (min-width: 768px) {
+  .error-msg {
+    visibility: hidden;
+    display: block;
+  }
+}
 
 /* Card */
 .card {

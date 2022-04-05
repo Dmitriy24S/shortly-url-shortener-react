@@ -22,7 +22,9 @@ export const Header = () => {
   return (
     <header>
       <nav className="flex justify-between items-center p-4 md:gap-8 md:max-w-7xl md:mx-auto">
-        <img src={logo} alt="logo" className="cursor-pointer" />
+        <a href="/">
+          <img src={logo} alt="logo" className="cursor-pointer" />
+        </a>
         {(isNavMenuOpen || screenWidth > 768) && <NavMenu />}
         <button
           className="nav-menu-toggle md:hidden"
