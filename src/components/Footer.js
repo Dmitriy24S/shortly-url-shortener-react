@@ -70,22 +70,22 @@ export const Footer = () => {
         <div className="social-links">
           <ul className="flex gap-6 justify-center items-center">
             <li>
-              <a href="#/">
+              <a href="#/" aria-label="facebook">
                 <FBLogo />
               </a>
             </li>
             <li>
-              <a href="#/">
+              <a href="#/" aria-label="twitter">
                 <TWLogo />
               </a>
             </li>
             <li>
-              <a href="#/">
+              <a href="#/" aria-label="pinterest">
                 <PTLogo />
               </a>
             </li>
             <li>
-              <a href="#/">
+              <a href="#/" aria-label="instagram">
                 <IGLogo />
               </a>
             </li>

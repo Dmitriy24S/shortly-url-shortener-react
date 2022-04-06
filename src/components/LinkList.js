@@ -32,6 +32,7 @@ export const LinkList = ({ urlList, setUrlList }) => {
             <div className="orignal-link-wrapper border-b-2 border-neutral-200 md:border-0 md:p-0 p-4 pb-2 w-full md:flex md:items-center">
               <button
                 className="delete-link absolute right-4 top-4 md:relative md:right-0 md:top-0 md:mr-4"
+                aria-label="delete list item"
                 onClick={(e) => {
                   handleDeleteLink(e, index, item.short_link);
                 }}
