@@ -1,4 +1,14 @@
-# Getting Started with Create React App
+# Shortly - url shortener
+
+![Design preview for the Shortly](./design/desktop-preview.jpg)
+
+## Welcome 
+
+Shortly - url shortener react page. Created with React, CSS & Tailwind CSS.
+
+[Live Demo](https://dmitriy24s.github.io/shortly-url-shortener-react/) 👈
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
